@@ -34,12 +34,25 @@ class MainDrawer extends StatelessWidget {
             padding: EdgeInsets.all(20),
             alignment: Alignment.centerLeft,
             color: Theme.of(context).accentColor,
-            child: Text(
-              'Menu',
-              style: TextStyle(
-                  fontWeight: FontWeight.w900,
-                  fontSize: 20,
-                  color: Theme.of(context).primaryColor),
+            child: Row(
+              children: [
+                IconButton(
+                    onPressed: () {},
+                    icon: Icon(
+                      Icons.account_circle,
+                      size: 26,
+                    )),
+                SizedBox(
+                  width: 10,
+                ),
+                Text(
+                  'Your Profile ',
+                  style: TextStyle(
+                      fontWeight: FontWeight.w900,
+                      fontSize: 20,
+                      color: Theme.of(context).primaryColor),
+                ),
+              ],
             ),
           ),
           SizedBox(

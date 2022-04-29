@@ -12,7 +12,7 @@ class ButtonCategories extends StatefulWidget {
 }
 
 class _ButtonCategoriesState extends State<ButtonCategories> {
-  bool ispressed = false;
+  bool ispressed = true;
 
   @override
   Widget build(BuildContext context) {
@@ -22,10 +22,10 @@ class _ButtonCategoriesState extends State<ButtonCategories> {
       child: Text(
         widget.text,
         style: TextStyle(
-          color: ispressed ? Colors.white : Colors.black,
+          color: ispressed ? Colors.black : Colors.white,
         ),
       ),
-      color: ispressed ? Colors.black : Colors.white,
+      color: ispressed ? Colors.white : Colors.black,
       onPressed: () => setState(() {
         ispressed = !ispressed;
       }),

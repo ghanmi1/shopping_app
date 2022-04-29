@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_complete_guide/screens/CartScreen.dart';
 import 'package:flutter_complete_guide/screens/FavoritesScreen.dart';
 import 'package:flutter_complete_guide/screens/Products_Overview_Screen.dart';
 
@@ -73,7 +74,8 @@ class MainDrawer extends StatelessWidget {
           buildListTile(
             'Cart',
             Icons.shopping_cart,
-            () {},
+            () => Navigator.of(context)
+                .pushReplacementNamed(CartScreen.routeName),
           ),
         ],
       ),

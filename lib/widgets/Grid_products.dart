@@ -6,8 +6,6 @@ import '../providers/products.dart';
 import 'Product_Item.dart';
 
 class GridProducts extends StatelessWidget {
-  final buttonsState = List.generate(3, (index) => false, growable: false);
-
   @override
   Widget build(BuildContext context) {
     final productsData = Provider.of<Products>(context);

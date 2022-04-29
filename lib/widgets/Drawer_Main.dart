@@ -60,7 +60,7 @@ class MainDrawer extends StatelessWidget {
             height: 20,
           ),
           buildListTile(
-            'Accueil',
+            'Shop',
             Icons.home,
             () => Navigator.of(context)
                 .pushReplacementNamed(ProductsOverviewScreen.routeName),
